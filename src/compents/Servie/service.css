@@ -1,0 +1,61 @@
+.services_container{
+    grid-template-columns: repeat(3,270px);
+    justify-content: center;
+    column-gap: 1.8rem;
+}
+.services_content{
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--container-color);
+    padding: 6rem 0 2rem 2.5rem;
+}
+.services_icon{
+    display: block;
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+}
+.services_title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+
+}
+.services_modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    opacity: 0;
+    transition: .3s;
+    visibility: hidden;
+}
+.services_modal-content{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+    margin-top: 100px;
+}
+.services_modal-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+.services_modal-service{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.active_modal{
+    opacity: 1;
+    visibility: visible;
+}
